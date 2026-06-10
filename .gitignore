@@ -1,0 +1,29 @@
+# Large/generated artifacts
+data/
+outputs/
+samples/
+logs/
+wandb/
+*.pkl
+*.pt
+*.pth
+*.safetensors
+*.zip
+*.jpg
+*.jpeg
+*.png
+*.webp
+
+# Keep the final 3500 kimg checkpoint for exact reproducibility.
+!checkpoints/
+!checkpoints/stylegan2ada_faces_clean_3500kimg_seed0.pkl
+
+# Python/cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local environment
+.env
+.venv/
+venv/
